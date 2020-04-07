@@ -1,7 +1,7 @@
 version: "2"
 services:
   coordinator:
-    image: dvillaj/riak-kv
+    image: dvillaj/riak
     ports:
       - "8087:8087"
       - "8098:8098"
@@ -12,7 +12,7 @@ services:
     volumes:
       - schemas:/etc/riak/schemas
   member:
-    image: dvillaj/riak-kv
+    image: dvillaj/riak
     ports:
       - "8087"
       - "8098"
