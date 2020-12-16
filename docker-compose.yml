@@ -9,8 +9,8 @@ services:
       - CLUSTER_NAME=riakkv
     labels:
       - "com.basho.riak.cluster.name=riakkv"
-    volumes:
-      - schemas:/etc/riak/schemas
+    #volumes:
+    #  - schemas:/etc/riak/schemas
   member:
     image: dvillaj/riak
     ports:
